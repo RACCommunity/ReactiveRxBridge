@@ -1,0 +1,4 @@
+github "ReactiveCocoa/ReactiveSwift" "2.0.0-alpha.1"
+github "ReactiveX/RxSwift" "3.4.1"
+github "antitypical/Result" "3.2.3"
+github "jspahrsummers/xcconfigs" "0.10"

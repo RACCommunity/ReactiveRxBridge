@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AEC80CA1EDCB8220005D52F /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEC80C71EDCB8220005D52F /* ReactiveSwift.framework */; };
+		9AEC80CB1EDCB8220005D52F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEC80C81EDCB8220005D52F /* Result.framework */; };
+		9AEC80CC1EDCB8220005D52F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEC80C91EDCB8220005D52F /* RxSwift.framework */; };
+		9AEC80CE1EDCB82F0005D52F /* RxBridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC80CD1EDCB82F0005D52F /* RxBridging.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9AEC80951EDCB6240005D52F /* ReactiveRxBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveRxBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AEC80A01EDCB6550005D52F /* ReactiveRxBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReactiveRxBridge.h; path = Sources/ReactiveRxBridge.h; sourceTree = SOURCE_ROOT; };
+		9AEC80A11EDCB6550005D52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = SOURCE_ROOT; };
+		9AEC80A61EDCB7B40005D52F /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		9AEC80A81EDCB7B40005D52F /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		9AEC80A91EDCB7B40005D52F /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		9AEC80AA1EDCB7B40005D52F /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		9AEC80AB1EDCB7B40005D52F /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		9AEC80AD1EDCB7B40005D52F /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		9AEC80AE1EDCB7B40005D52F /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		9AEC80AF1EDCB7B40005D52F /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		9AEC80B11EDCB7B40005D52F /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		9AEC80B21EDCB7B40005D52F /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		9AEC80B31EDCB7B40005D52F /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		9AEC80B41EDCB7B40005D52F /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		9AEC80B61EDCB7B40005D52F /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		9AEC80B71EDCB7B40005D52F /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		9AEC80B81EDCB7B40005D52F /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		9AEC80B91EDCB7B40005D52F /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		9AEC80BA1EDCB7B40005D52F /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		9AEC80BD1EDCB7B40005D52F /* tvOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Application.xcconfig"; sourceTree = "<group>"; };
+		9AEC80BE1EDCB7B40005D52F /* tvOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Base.xcconfig"; sourceTree = "<group>"; };
+		9AEC80BF1EDCB7B40005D52F /* tvOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		9AEC80C01EDCB7B40005D52F /* tvOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		9AEC80C21EDCB7B40005D52F /* watchOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Application.xcconfig"; sourceTree = "<group>"; };
+		9AEC80C31EDCB7B40005D52F /* watchOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Base.xcconfig"; sourceTree = "<group>"; };
+		9AEC80C41EDCB7B40005D52F /* watchOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		9AEC80C51EDCB7B40005D52F /* watchOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		9AEC80C71EDCB8220005D52F /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = "Carthage/Checkouts/ReactiveSwift/build/Debug-iphoneos/ReactiveSwift.framework"; sourceTree = "<group>"; };
+		9AEC80C81EDCB8220005D52F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "Carthage/Checkouts/Result/build/Debug-iphoneos/Result.framework"; sourceTree = "<group>"; };
+		9AEC80C91EDCB8220005D52F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "Carthage/Checkouts/RxSwift/build/Debug-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
+		9AEC80CD1EDCB82F0005D52F /* RxBridging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxBridging.swift; path = Sources/RxBridging.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AEC80911EDCB6240005D52F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AEC80CA1EDCB8220005D52F /* ReactiveSwift.framework in Frameworks */,
+				9AEC80CB1EDCB8220005D52F /* Result.framework in Frameworks */,
+				9AEC80CC1EDCB8220005D52F /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AEC808B1EDCB6240005D52F = {
+			isa = PBXGroup;
+			children = (
+				9AEC80971EDCB6240005D52F /* ReactiveRxBridge */,
+				9AEC80A31EDCB7B40005D52F /* Configurations */,
+				9AEC80961EDCB6240005D52F /* Products */,
+				9AEC80C61EDCB8210005D52F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9AEC80961EDCB6240005D52F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AEC80951EDCB6240005D52F /* ReactiveRxBridge.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AEC80971EDCB6240005D52F /* ReactiveRxBridge */ = {
+			isa = PBXGroup;
+			children = (
+				9AEC80CD1EDCB82F0005D52F /* RxBridging.swift */,
+				9AEC80A01EDCB6550005D52F /* ReactiveRxBridge.h */,
+				9AEC80A11EDCB6550005D52F /* Info.plist */,
+			);
+			path = ReactiveRxBridge;
+			sourceTree = "<group>";
+		};
+		9AEC80A31EDCB7B40005D52F /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				9AEC80A51EDCB7B40005D52F /* Base */,
+				9AEC80B01EDCB7B40005D52F /* iOS */,
+				9AEC80B51EDCB7B40005D52F /* Mac OS X */,
+				9AEC80BC1EDCB7B40005D52F /* tvOS */,
+				9AEC80C11EDCB7B40005D52F /* watchOS */,
+			);
+			name = Configurations;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
+		};
+		9AEC80A51EDCB7B40005D52F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9AEC80A61EDCB7B40005D52F /* Common.xcconfig */,
+				9AEC80A71EDCB7B40005D52F /* Configurations */,
+				9AEC80AC1EDCB7B40005D52F /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9AEC80A71EDCB7B40005D52F /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				9AEC80A81EDCB7B40005D52F /* Debug.xcconfig */,
+				9AEC80A91EDCB7B40005D52F /* Profile.xcconfig */,
+				9AEC80AA1EDCB7B40005D52F /* Release.xcconfig */,
+				9AEC80AB1EDCB7B40005D52F /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		9AEC80AC1EDCB7B40005D52F /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				9AEC80AD1EDCB7B40005D52F /* Application.xcconfig */,
+				9AEC80AE1EDCB7B40005D52F /* Framework.xcconfig */,
+				9AEC80AF1EDCB7B40005D52F /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		9AEC80B01EDCB7B40005D52F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9AEC80B11EDCB7B40005D52F /* iOS-Application.xcconfig */,
+				9AEC80B21EDCB7B40005D52F /* iOS-Base.xcconfig */,
+				9AEC80B31EDCB7B40005D52F /* iOS-Framework.xcconfig */,
+				9AEC80B41EDCB7B40005D52F /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9AEC80B51EDCB7B40005D52F /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				9AEC80B61EDCB7B40005D52F /* Mac-Application.xcconfig */,
+				9AEC80B71EDCB7B40005D52F /* Mac-Base.xcconfig */,
+				9AEC80B81EDCB7B40005D52F /* Mac-DynamicLibrary.xcconfig */,
+				9AEC80B91EDCB7B40005D52F /* Mac-Framework.xcconfig */,
+				9AEC80BA1EDCB7B40005D52F /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
+		9AEC80BC1EDCB7B40005D52F /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				9AEC80BD1EDCB7B40005D52F /* tvOS-Application.xcconfig */,
+				9AEC80BE1EDCB7B40005D52F /* tvOS-Base.xcconfig */,
+				9AEC80BF1EDCB7B40005D52F /* tvOS-Framework.xcconfig */,
+				9AEC80C01EDCB7B40005D52F /* tvOS-StaticLibrary.xcconfig */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		9AEC80C11EDCB7B40005D52F /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				9AEC80C21EDCB7B40005D52F /* watchOS-Application.xcconfig */,
+				9AEC80C31EDCB7B40005D52F /* watchOS-Base.xcconfig */,
+				9AEC80C41EDCB7B40005D52F /* watchOS-Framework.xcconfig */,
+				9AEC80C51EDCB7B40005D52F /* watchOS-StaticLibrary.xcconfig */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		9AEC80C61EDCB8210005D52F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AEC80C71EDCB8220005D52F /* ReactiveSwift.framework */,
+				9AEC80C81EDCB8220005D52F /* Result.framework */,
+				9AEC80C91EDCB8220005D52F /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9AEC80921EDCB6240005D52F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9AEC80941EDCB6240005D52F /* ReactiveRxBridge-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AEC809D1EDCB6240005D52F /* Build configuration list for PBXNativeTarget "ReactiveRxBridge-iOS" */;
+			buildPhases = (
+				9AEC80901EDCB6240005D52F /* Sources */,
+				9AEC80911EDCB6240005D52F /* Frameworks */,
+				9AEC80921EDCB6240005D52F /* Headers */,
+				9AEC80931EDCB6240005D52F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReactiveRxBridge-iOS";
+			productName = ReactiveRxBridge;
+			productReference = 9AEC80951EDCB6240005D52F /* ReactiveRxBridge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AEC808C1EDCB6240005D52F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Anders;
+				TargetAttributes = {
+					9AEC80941EDCB6240005D52F = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9AEC808F1EDCB6240005D52F /* Build configuration list for PBXProject "ReactiveRxBridge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9AEC808B1EDCB6240005D52F;
+			productRefGroup = 9AEC80961EDCB6240005D52F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AEC80941EDCB6240005D52F /* ReactiveRxBridge-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AEC80931EDCB6240005D52F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AEC80901EDCB6240005D52F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AEC80CE1EDCB82F0005D52F /* RxBridging.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9AEC809B1EDCB6240005D52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AEC80A81EDCB7B40005D52F /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactivecocoa.ReactiveRxBridge;
+				PRODUCT_MODULE_NAME = ReactiveRxBridge;
+				PRODUCT_NAME = ReactiveRxBridge;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AEC809C1EDCB6240005D52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AEC80AA1EDCB7B40005D52F /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactivecocoa.ReactiveRxBridge;
+				PRODUCT_MODULE_NAME = ReactiveRxBridge;
+				PRODUCT_NAME = ReactiveRxBridge;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9AEC809E1EDCB6240005D52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AEC80B31EDCB7B40005D52F /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9AEC809F1EDCB6240005D52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AEC80B31EDCB7B40005D52F /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AEC808F1EDCB6240005D52F /* Build configuration list for PBXProject "ReactiveRxBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AEC809B1EDCB6240005D52F /* Debug */,
+				9AEC809C1EDCB6240005D52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AEC809D1EDCB6240005D52F /* Build configuration list for PBXNativeTarget "ReactiveRxBridge-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AEC809E1EDCB6240005D52F /* Debug */,
+				9AEC809F1EDCB6240005D52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AEC808C1EDCB6240005D52F /* Project object */;
+}
